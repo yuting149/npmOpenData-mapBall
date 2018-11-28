@@ -1,0 +1,27 @@
+[
+    {
+        "type": "Group",
+        "name": "MyApp",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "jYVyLgTUrcJ3HeCM"
+    },
+    {
+        "type": "Group",
+        "name": "webglEarth",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "qfQlLyRrPdhJI9kK"
+    },
+    {
+        "type": "File",
+        "name": "d:\\code\\wgeWorldHistory\\web\\js\\main.js",
+        "parent_id": "jYVyLgTUrcJ3HeCM",
+        "fsPath": "d:\\code\\wgeWorldHistory\\web\\js\\main.js",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "eP41NfpkaqZ2jniF"
+    }
+]
