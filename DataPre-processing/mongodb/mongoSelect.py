@@ -37,3 +37,12 @@ import json
 #     print("-" + event["yearFrom"][2:])
 
 # eventsTable.remove({"city": "中國"})
+
+
+events = eventsTable.find({"detail": "toy"}, {"_id": 0})
+eventss = []
+
+for event in events:
+    eventss.append(event)
+    print(event)
+print(len(eventss))
