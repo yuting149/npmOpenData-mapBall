@@ -337,6 +337,20 @@ app.controller("myController", ["$scope", "$document", "$element", "$http", func
 	};
 	// var announcetag = document.querySelector(".announce");
 	// announcetag.addEventListener("click", $scope.frameframe);
+
+	// 臨時輸入框
+	$scope.searchCate = function () {
+		var year = prompt("Please enter year", "1945");
+		var category = prompt("Please enter category", "jade");
+		if (year != null) {
+			console.log(year);
+			console.log(category);
+			//換皮
+			//換資料
+		}
+		return
+	}
+	// 臨時輸入框
 }]);
 
 ////////////////////////////////////////////////////////////////////
@@ -389,6 +403,8 @@ window.onload = function () {
 		event.preventDefault();
 	});
 };
+
+
 
 
 
