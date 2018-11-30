@@ -172,9 +172,9 @@ app.controller("myController", ["$scope", "$document", "$element", "$http", func
 
 				$scope.events.forEach(value => {
 					html += `<div class="flow event">
-                  <img src="${value["image"]}"height="42" width="42">
-                  <div style="display:none">${value["detail"]}</div>
-                </div>`;
+				<img src="${value["image"]}"height="42" width="42">
+				<div style="display:none">${value["detail"]}</div>
+			</div>`;
 				});
 
 				thisCity.style.width = "50vw";
@@ -316,17 +316,12 @@ app.controller("myController", ["$scope", "$document", "$element", "$http", func
 	// menu
 	const menumenu = document.querySelector(".horscroll");
 
-
-
 	function goTimeMenu(e) {
 		var scrollSize = e.wheelDelta;
 		// console.info(scrollSize);
 		// console.info(this.scrollWidth);
 		this.scrollLeft = this.scrollLeft - scrollSize * 2;
-
-
 		e.preventDefault();
-
 	}
 
 	menumenu.addEventListener("mousewheel", goTimeMenu);
@@ -351,6 +346,16 @@ app.controller("myController", ["$scope", "$document", "$element", "$http", func
 		return
 	}
 	// 臨時輸入框
+
+	setInterval(function () {
+		$http({
+			method: "GET",
+			url: "http://140.113.73.212:8877/",
+		}).then(function (response) {
+			$scope.allmarker = response.data;
+			console.log($scope.allmarker);
+		}, function (error) {});
+	}, 12000)
 }]);
 
 ////////////////////////////////////////////////////////////////////
